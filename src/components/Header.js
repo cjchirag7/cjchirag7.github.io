@@ -78,7 +78,7 @@ function Header(props) {
                   )}
               </ul>
               <br />
-              <a href="/chirag_jain_18JE0254.pdf" target="_blank" rel="noopener noreferrer" style={{ color: 'white' }}>
+              <a href="/IIT(ISM)_Chirag_Jain.pdf" target="_blank" rel="noopener noreferrer" style={{ color: 'white' }}>
                 <button type="social" style={{ color: 'white' }}>
                   Download resume &nbsp;
                   <i className="fa fa-external-link" />

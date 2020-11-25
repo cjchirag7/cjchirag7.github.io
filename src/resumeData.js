@@ -4,7 +4,7 @@ let resumeData = {
   linkedinId: 'https://www.linkedin.com/in/cjchirag7/',
   skypeid: 'live:cjchirag7',
   roleDescription:
-    " I'm currently in my pre-final year, pursuing B.Tech in Computer Science and Engineering at IIT(ISM) Dhanbad. I like to learn about new technologies, make technical tutorials or simply play badminton in my free time.",
+    " I'm currently in my final year, pursuing B.Tech in Computer Science and Engineering at IIT(ISM) Dhanbad. I like to learn about new technologies and make technical tutorials in my free time.",
   socialLinks: [
     {
       name: 'linkedin',
@@ -30,7 +30,7 @@ let resumeData = {
       name: 'youtube',
       url: 'https://www.youtube.com/channel/UCdREwwNt4CvN9W0Ys9iYTqw',
       className: 'fa fa-youtube',
-    },
+    }   
   ],
   aboutme:
     'I am currently a pre-final year student at the Indian Institute of Technology (ISM) Dhanbad and pursuing my B.Tech in Computer Science and Engineering from here. I am a self taught Full Stack Web Developer, currently diving deeper into Machine Learning. I believe that to be successful in life, one needs to be obsessive with their dreams and keep working towards them.',
@@ -41,7 +41,7 @@ let resumeData = {
       UniversityName: 'Indian Institute of Technology (ISM) Dhanbad',
       specialization: 'B.Tech in Computer Science and Engineering',
       duration: 'July 2018 - May 2022',
-      Achievements: 'CGPA - 9.30',
+      Achievements: 'CGPA - 9.26',
     },
     {
       UniversityName: 'Carmel Convent Sr. Sec. School Neemuch',
@@ -52,9 +52,17 @@ let resumeData = {
   ],
   work: [
     {
+      companyName: 'Microsoft',
+      position: 'Software Engineer Intern',
+      duration: 'May 2021 - July 2021',
+      desc:
+        'Developed a loosely coupled component for alerting based on critical touchpoints, that can be identified by monitoring a telemetry or DB.',
+      companyLink: 'https://www.microsoft.com/',
+    },    
+    {
       companyName: 'CyberLabs',
       position: 'Head of Web Development Division',
-      duration: 'July 2020 - Present',
+      duration: 'July 2020 - March 2021',
       desc:
         'CyberLabs is the official programming club of IIT(ISM) Dhanbad. I take regular sessions on web development and collaborate in team projects',
       companyLink: 'https://cyberlabs.club/',
@@ -64,7 +72,7 @@ let resumeData = {
       position: 'Software Development Intern',
       duration: 'March 2020 - May 2020',
       desc:
-        'An internship to develop updates for a React Native and redux based audiobook app - ‘PaperVoice’. My job was to develop a feature for users to manage bookmarks and download an audiobook. I also developed the logic and UI for the music screen in the app and the notification panel, with play, pause, forward and backward options.',
+        'Developed features for \'PaperVoice\', a cross-platform audiobook application. Features developed included bookmark management, audiobook review system and payment gateway integration.',
       companyLink: 'https://www.deepmoth.ai/',
     },
     {
@@ -73,7 +81,7 @@ let resumeData = {
       duration: 'Sept 2019 - Oct 2019',
       desc:
         'Developed frontend of the website of Concetto, the official techno-management fest of IIT (ISM) Dhanbad, in React JS.',
-      companyLink: 'https://www.concetto19.tech/',
+      companyLink: 'https://cjchirag7.github.io/concetto_front/',
     },
   ],
   skillsDescription: 'Your skills here',
@@ -87,7 +95,7 @@ let resumeData = {
         },
         {
           img:
-            'https://icon-library.net/images/javascript-icon-png/javascript-icon-png-23.jpg',
+            '/images/javascript-icon-png-23.jpg',
           name: 'JavaScript',
         },
         {
@@ -101,7 +109,7 @@ let resumeData = {
         {
           img: '/images/ts.png',
           name: 'Typescript',
-        },
+        }
       ],
     },
     {
@@ -146,22 +154,22 @@ let resumeData = {
           name: 'Bootstrap',
         },
         {
+          img: '/images/NET_Core_Logo.svg.png',
+          name: '.NET Core'
+        },
+        {
           img: '/images/jquery.png',
           name: 'JQuery',
         },
         {
           img:
-            'https://cdn.freebiesupply.com/logos/large/2x/html-5-logo-png-transparent.png',
+            '/images/html-5-logo-png-transparent.png',
           name: 'HTML',
         },
         {
           img: 'https://upload.wikimedia.org/wikipedia/commons/3/3d/CSS.3.svg',
           name: 'CSS',
-        },
-        {
-          img: '/images/graphql.png',
-          name: 'GraphQL',
-        },
+        }
       ],
     },
     {
@@ -181,6 +189,10 @@ let resumeData = {
       category: 'Others',
       list: [
         {
+          img: '/images/docker.png',
+          name: 'Docker',
+        },        
+        {
           img: '/images/git.png',
           name: 'Git',
         },
@@ -193,11 +205,82 @@ let resumeData = {
   ],
   portfolio: [
     {
+      title: 'Dataset Creation & Model Eval UI',
+      intro:
+        "UI to create a well balanced image dataset with various augmentations and get insights about model failure by visualising various metrics. I received bronze in Inter IIT Tech Meet for this.",
+      des:
+        'A vehicle automation use-case to help vehicles better identify traffic signs. It has the following features : ',
+      points: [
+        'Dataset creation UI to allow users to add a series of augmentations to uploaded images, add to the dataset, balance and split the dataset.',
+        'Post evaluation UI lets users test their trained model on the test dataset, analyze various metrics and get suggestions on how to improve the model and what to experiment next.',
+      ],
+      imgurl: '/images/portfolio/bosch_inter_iit.png',
+      techstack: ['Python', 'FastAPI', 'React', 'Docker', 'Node.js'],
+      links: {
+        launch: 'https://www.youtube.com/watch?v=__GSd56tybM',
+        github: 'https://github.com/NBNARADHYA/bosch-inter-iit/tree/production',
+      },
+    },
+    {
+      title: 'Shopping Assistant',
+      intro:
+        "A chatbot which bridges the gap between online and offline shopping. Also provides a virtual trial room for clothes and sunglasses. I secured top-10 rank in Hackon with Amazon, for this project.",
+      des:
+        'A chatbot, which assists consumers in deciding the right product and bridge the gap between online and offline shopping. It has the following features : ',
+      points: [
+        'Suggests products to the consumer depending upon his needs, just like a salesperson.',
+        'Helps the consumer to virtually experience fashion products. E.g. If a consumer needs to try a T-shirt or a spectacle our shopping assistant gives him real time experience of how that product would look on him/her.',
+        'Provides a summary of all the reviews about a product, which prevents users from doing the tedious job of going through hundreds of reviews of that product.'
+      ],
+      imgurl: '/images/portfolio/shopping_assistant.png',
+      techstack: ['Python', 'NLTK','FastAPI', 'React', 'Docker'],
+      links: {
+        launch: 'https://www.youtube.com/watch?v=x_BFtcoaTks',
+        github: 'https://github.com/cjchirag7/shopping-assistant',
+      },
+    },
+    {
+      title: 'Sky Detector',
+      intro:
+        'A cross-platform mobile app for automatically detecting sky pixels in a photograph and calculate the angle of elevation for each vertical column.',
+      des: 'The app has the following features : ',
+      points: [
+        'The application allows user to upload or capture an image and generates a mask image consisting of sky pixels marked in white colour in the image and other pixels marked in black colour.',
+        'Further, using information about camera optics, the application gives angle of elevation of the lowest sky pixel for all pixel columns in the mask image, in the form of a line graph.',
+        " The application also keeps tracks of user's history with the help of a MySQL database",
+      ],
+      imgurl: '/images/portfolio/sky-detector.png',
+      techstack: ['Flask', 'React Native', 'MySQL', 'React', 'PyTorch'],
+      links: {
+        launch: 'https://www.youtube.com/watch?v=Fo4Ay7CXXDU&feature=youtu.be',
+        github: 'https://github.com/cjchirag7/sky-detector/',
+      },
+    }, 
+    {
+      title: 'Covid Vaccine Distribution System',
+      intro:
+        'Prioritized vaccine delivery using AI/ML and developed a web interface for the entire distribution system. This was recognized as best project idea in Hackfest 2021, by PhonePe.',
+      des: 'It has the following features : ',
+      points: [
+        'Allows a user to find the nearest vaccination center from his location.',
+        'Uses medical, demographic and socio-economic Covid data to cluster similar regions in India.',
+        'Uses regression models on local medical data to allot a fatality score to each registered individual based on which vaccines would be distributed.',
+        'Vaccination centers send schedules to the users based on priority score and stock of vaccines.',
+        "A Covid chatbot that provides the accurate information regarding Covid, from trusted sources.",
+      ],
+      imgurl: '/images/portfolio/covid-vaccine.jpeg',
+      techstack: ['Flask', 'React', 'PostgreSQL', 'React', 'PyTorch'],
+      links: {
+        launch: 'https://youtu.be/z92IZQF5epA',
+        github: 'https://github.com/NBNARADHYA/hackfest-2021',
+      },
+    },           
+    {
       title: 'Click ISM',
       intro:
         "A campus portal that provides a Market Hub with some unique features of 'unrestricted bidding' and 'product verification'.",
       des:
-        'It is an E-commerce website where students can sell used items, to other students. It has the following features : ',
+        'It is a buying and selling website where students can sell used items, to other students. It has the following features : ',
       points: [
         'Once a student uploads a product, the admin verifies that it is not a fake product. And if the verification is successful, then only the product is visible publicly.',
         ' Students can also allow bidding on their products to earn maximum profit.',
@@ -255,39 +338,38 @@ let resumeData = {
       },
     },
     {
-      title: 'Sky Detector',
+      title: 'Chatroom Application',
       intro:
-        'A cross-platform mobile app for automatically detecting sky pixels in a photograph and calculate the angle of elevation for each vertical column.',
-      des: 'The app has the following features : ',
+        'A multi-threaded client-server chat application written in C++ that uses sockets to communicate.',
+      des: 'The app has the following features :',
       points: [
-        'The application allows user to upload or capture an image and generates a mask image consisting of sky pixels marked in white colour in the image and other pixels marked in black colour.',
-        'Further, using information about camera optics, the application gives angle of elevation of the lowest sky pixel for all pixel columns in the mask image, in the form of a line graph.',
-        " The application also keeps tracks of user's history with the help of a MySQL database",
+        'Users can send and receive messages simultaneously',
+        'Multiple users can send messages simultaneously',
       ],
-      imgurl: '/images/portfolio/sky-detector.png',
-      techstack: ['Flask', 'React Native', 'MySQL', 'React', 'PyTorch'],
+      imgurl: '/images/portfolio/chatroom.png',
+      techstack: ['C++','Multi-threading','Sockets'],
       links: {
-        launch: 'https://www.youtube.com/watch?v=Fo4Ay7CXXDU&feature=youtu.be',
-        github: 'https://github.com/cjchirag7/sky-detector/',
+        launch: 'https://github.com/cjchirag7/chatroom-cpp/blob/main/screenshot.png',        
+        github: 'https://github.com/cjchirag7/chatroom-cpp',
       },
     },
-    {
-      title: 'Brick Breaker Game',
-      intro:
-        'A simple brick breaker game using vanilla JS and canvas from HTML5',
-      des: 'Rules of the game :',
-      points: [
-        'There are 2 types of bricks - red brick breaks in 2 hits and blue brick breaks in a single hit.',
-        'The user has 3 lives.',
-        ' The score is calculated using the number of successful hits made by the user, before losing all his lives',
-      ],
-      imgurl: '/images/portfolio/brickgame.png',
-      techstack: ['JavaScript', 'HTML', 'CSS'],
-      links: {
-        launch: 'https://cjchirag7.github.io/break_the_brick/',
-        github: 'https://github.com/cjchirag7/break_the_brick',
-      },
-    },
+    // {
+    //   title: 'Brick Breaker Game',
+    //   intro:
+    //     'A simple brick breaker game using vanilla JS and canvas from HTML5',
+    //   des: 'Rules of the game :',
+    //   points: [
+    //     'There are 2 types of bricks - red brick breaks in 2 hits and blue brick breaks in a single hit.',
+    //     'The user has 3 lives.',
+    //     ' The score is calculated using the number of successful hits made by the user, before losing all his lives',
+    //   ],
+    //   imgurl: '/images/portfolio/brickgame.png',
+    //   techstack: ['JavaScript', 'HTML', 'CSS'],
+    //   links: {
+    //     launch: 'https://cjchirag7.github.io/break_the_brick/',
+    //     github: 'https://github.com/cjchirag7/break_the_brick',
+    //   },
+    // },
     {
       title: 'IIT(ISM) Gymkhana website',
       intro:
