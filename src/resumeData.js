@@ -1,10 +1,10 @@
 let resumeData = {
   name: 'Chirag Jain',
-  role: 'Fullstack Developer and a Competitive Programmer',
+  role: 'Software Engineer',
   linkedinId: 'https://www.linkedin.com/in/cjchirag7/',
   skypeid: 'live:cjchirag7',
   roleDescription:
-    " I'm currently in my final year, pursuing B.Tech in Computer Science and Engineering at IIT(ISM) Dhanbad. I like to learn about new technologies and make technical tutorials in my free time.",
+    "I'm currently a Software Engineer at Google. I have done my undergrad in Computer Science and Engineering from IIT(ISM) Dhanbad. My hobbies are cycling and playing badminton. I like to make technical tutorials in my free time.",
   socialLinks: [
     {
       name: 'linkedin',
@@ -30,10 +30,15 @@ let resumeData = {
       name: 'youtube',
       url: 'https://www.youtube.com/channel/UCdREwwNt4CvN9W0Ys9iYTqw',
       className: 'fa fa-youtube',
-    }   
+    },
+    {
+      name: 'instagram',
+      url: 'https://www.instagram.com/cjchirag7/',
+      className: 'fa fa-instagram',
+    }
   ],
   aboutme:
-    'I am currently a pre-final year student at the Indian Institute of Technology (ISM) Dhanbad and pursuing my B.Tech in Computer Science and Engineering from here. I am a self taught Full Stack Web Developer, currently diving deeper into Machine Learning. I believe that to be successful in life, one needs to be obsessive with their dreams and keep working towards them.',
+    "I'm currently a Software Engineer @ Google. I have completed my undergrad in Computer Science and Engineering from IIT(ISM) Dhanbad. My hobbies are cycling and playing badminton. I like to make technical tutorials in my free time.",
   address: 'India',
   website: 'https://cjchirag7.github.io',
   education: [
@@ -41,7 +46,7 @@ let resumeData = {
       UniversityName: 'Indian Institute of Technology (ISM) Dhanbad',
       specialization: 'B.Tech in Computer Science and Engineering',
       duration: 'July 2018 - May 2022',
-      Achievements: 'CGPA - 9.26',
+      Achievements: 'CGPA - 9.32',
     },
     {
       UniversityName: 'Carmel Convent Sr. Sec. School Neemuch',
@@ -51,6 +56,14 @@ let resumeData = {
     },
   ],
   work: [
+    {
+      companyName: 'Google',
+      position: 'Software Engineer',
+      duration: 'July 2022 - Present',
+      desc:
+        "Working on the Google Production Platform, to manage the fleet of datacenters and allocate resources to various product efforts.",
+      companyLink: 'https://about.google/',
+    },    
     {
       companyName: 'Microsoft',
       position: 'Software Engineer Intern',
@@ -64,7 +77,7 @@ let resumeData = {
       position: 'Head of Web Development Division',
       duration: 'July 2020 - March 2021',
       desc:
-        'CyberLabs is the official programming club of IIT(ISM) Dhanbad. I take regular sessions on web development and collaborate in team projects',
+        'CyberLabs is the official programming club of IIT(ISM) Dhanbad. I took regular sessions on web development and collaborate in team projects',
       companyLink: 'https://cyberlabs.club/',
     },
     {
@@ -103,9 +116,13 @@ let resumeData = {
           name: 'Python',
         },
         {
-          img: '/images/c.png',
-          name: 'C',
-        },
+          img: '/images/java.png',
+          name: 'Java',
+        },                
+        // {
+        //   img: '/images/c.png',
+        //   name: 'C',
+        // },
         {
           img: '/images/ts.png',
           name: 'Typescript',

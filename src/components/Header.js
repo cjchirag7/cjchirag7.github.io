@@ -56,7 +56,6 @@ function Header(props) {
                 Hi, I'm {resumeData.name}{' '}
               </h1>
               <h3 style={{ color: '#fff', fontFamily: 'sans-serif ' }}>
-                I am a {resumeData.role}, who loves to transform ideas into reality using code.
                 {resumeData.roleDescription}
               </h3>
               <hr />
